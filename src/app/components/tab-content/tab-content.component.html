@@ -1,0 +1,16 @@
+<!-- service section tabs -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col my-3">
+      <h6><i class="fa-solid fa-heart-circle-check fs-4 mx-2"></i> Our Services</h6>
+      <h2 class="mb-4 fw-1">We are here for you</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card" *ngFor="let tab of tabArray;let sr=index" (click)="setTab(sr)">
+        <div class="card-body" [ngClass]="activetedTab == sr ? 'active' : ''">{{tab}}</div>
+      </div>
+    </div>
+  </div>
+</div>

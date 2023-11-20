@@ -1,0 +1,173 @@
+<!-- service section in tabs details -->
+<div class="container">
+  <div class="row">
+    <!-- tab component -->
+    <div class="col-4">
+      <app-tab-content [tabArray]="tabs" (onTabChange)="tabChange($event)"></app-tab-content>
+    </div>
+    <!-- UI / UX Design -->
+    <div class="col-7 mt-4 mx-4">
+      <div class="row srvice">
+        <div class="col">
+          <div *ngIf="activetedTabIndex == 0">
+            <div class="">
+              <img src="https://techstalwarts.com/assets/images/home/services/ui_ux3.png" width="750" height="350"
+                alt="image">
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="my-3">
+                  <h4>UI / UX Design</h4>
+                  <p>Our team of experts is dedicated to bringing your vision to life, whether you're looking for a new
+                    user
+                    interface design for your web application or seeking to enhance the user experience of your existing
+                    software.</p>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="col-12 my-1">
+                <div>
+                  <h5>Technologies</h5>
+                </div>
+              </div>
+              <div class="col-12 my-3">
+                <div class="tags">
+                  <span><img src="../../../assets/figma.svg" width="35px;" height="35px;"></span>
+                  <span><img src="../../../assets/indesign.svg" class="mx-4" width="35px;" height="35px;"></span>
+                  <span><img src="../../../assets/xd.svg" width="35px;" height="35px;"></span>
+                </div>
+              </div>
+              <div class="col-12 my-3">
+                <a>Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cloud Computing details -->
+      <div class="row srvice">
+        <div class="col">
+          <div *ngIf="activetedTabIndex == 1">
+            <div class="">
+              <img src="https://techstalwarts.com/assets/images/home/services/cloud2.png" width="750" height="350"
+                alt="image">
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="my-3">
+                  <h4>Cloud Computing</h4>
+                  <p>Maximize your cloud potential with our tailored services, covering strategy, migration,
+                    architecture, and optimization. From infrastructure setup to data management and application
+                    deployment, we ensure reliable performance, data security, a...</p>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="col-12 my-1">
+                <div>
+                  <h5>Technologies</h5>
+                </div>
+              </div>
+              <div class="col-12 my-3">
+                <div class="tags">
+                  <span><img src="https://techstalwarts.com/assets/images/home/cloud_icon/aws.svg" width="35px;"
+                      height="35px;"></span>
+                  <span><img src="https://techstalwarts.com/assets/images/home/cloud_icon/vector.svg" class="mx-4"
+                      width="35px;" height="35px;"></span>
+                  <span><img src="https://techstalwarts.com/assets/images/home/cloud_icon/google_cloud.svg"
+                      width="35px;" height="35px;"></span>
+                </div>
+              </div>
+              <div class="col-12 my-3">
+                <a>Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Web Development -->
+      <div class="row srvice">
+        <div class="col">
+          <div *ngIf="activetedTabIndex == 2">
+            <div class="">
+              <img src="https://techstalwarts.com/assets/images/home/services/web.png" width="750" height="350"
+                alt="image">
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="my-3">
+                  <h4>Web Development</h4>
+                  <p>From simple business websites to e-commerce platforms and complex web applications, we have the
+                    skills to turn your vision into reality. Our collaborative and customer-focused web development
+                    process ensures that we understand your goals, target aude....</p>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="col-12 my-1">
+                <div>
+                  <h5>Technologies</h5>
+                </div>
+              </div>
+              <div class="col-12 my-3">
+                <div class="tags">
+                  <span><img src="https://techstalwarts.com/assets/images/home/web_icon/ajax.svg" width="35px;"
+                      height="35px;"></span>
+                  <span><img src="https://techstalwarts.com/assets/images/home/web_icon/angular.svg" class="mx-4"
+                      width="35px;" height="35px;"></span>
+                  <span><img src="https://techstalwarts.com/assets/images/home/web_icon/bootstrap.svg" width="35px;"
+                      height="35px;"></span>
+                </div>
+              </div>
+              <div class="col-12 my-3">
+                <a>Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Platform Development -->
+      <div class="row srvice">
+        <div class="col">
+          <div *ngIf="activetedTabIndex == 3">
+            <div class="">
+              <img src="https://techstalwarts.com/assets/images/home/services/plateform2.png" width="750" height="350"
+                alt="image">
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="my-3">
+                  <h4>Platform Development</h4>
+                  <p>Empowering your business with custom-built platforms and enhanced systems that exceed expectations.
+                    From custom-built platforms to enhancing existing systems, our skilled developers prioritize
+                    intuitive user interfaces, seamless navigation, robust bac...</p>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="col-12 my-1">
+                <div>
+                  <h5>Technologies</h5>
+                </div>
+              </div>
+              <div class="col-12 my-3">
+                <div class="tags">
+                  <span><img src="https://techstalwarts.com/assets/images/home/platform_icon/react.svg" width="35px;"
+                      height="35px;"></span>
+                  <span><img src="https://techstalwarts.com/assets/images/home/platform_icon/angular.svg" class="mx-4"
+                      width="35px;" height="35px;"></span>
+                  <span><img src="https://techstalwarts.com/assets/images/home/platform_icon/js.svg" width="35px;"
+                      height="35px;"></span>
+                </div>
+              </div>
+              <div class="col-12 my-3">
+                <a>Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.card {
+  padding: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  width: 70%;
+  background-color: #d3d9e5;
+  font-weight: 600;
+}
+
+.card:hover {
+  background-color: #101828;
+  color: white;
+
+}
+
